@@ -2,7 +2,7 @@
 using namespace std;
 
 void fun(int *&p){
-// p=NULL;
+p=NULL;
 }
 
 int main (){
