@@ -1,0 +1,1 @@
+{"name":"Local: min_max","url":"d:\\courses\\Phitron\\DSA\\conceptual-session-ds-2-2-main\\min_max.cpp","tests":[{"id":1719594886908,"input":"2 4 1 5 3 6 -1","output":"1 6"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\courses\\Phitron\\DSA\\conceptual-session-ds-2-2-main\\min_max.cpp","group":"local","local":true}

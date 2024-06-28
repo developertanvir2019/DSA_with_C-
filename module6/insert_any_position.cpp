@@ -95,7 +95,7 @@ int main() {
             break;
         }else if(op==5){
           int pos;
-          cout<<"Enter position: "
+          cout<<"Enter position: ";
           cin>>pos;
            delete_from_position(head,pos);
         } else {
