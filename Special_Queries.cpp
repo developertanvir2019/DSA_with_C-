@@ -5,7 +5,6 @@ int main() {
     int q;
     cin >> q;
     queue<string> qu;
-
     for (int i = 0; i < q; ++i) {
         int command;
         cin >> command;
