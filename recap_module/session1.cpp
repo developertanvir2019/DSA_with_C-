@@ -28,7 +28,16 @@ Node *tmp=head;
 while(tmp->next!=NULL){
     tmp=tmp->next;
 }
-tmp->next=newNode;
+tmp->next=newNode; 
+}
+void insertHead(int val,Node*& head){
+Node *newNode=new Node(val);
+if(head==NULL){
+    head=newNode;
+    return;
+}
+newNode->next=head;
+head=newNode;
 }
 
 int main (){
