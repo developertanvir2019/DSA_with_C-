@@ -22,7 +22,7 @@ int main() {
     }
     if(flag){
         cout<<"YES";
-    }else{
+    }else{     
         cout<<"NO";
     }
     return 0;

@@ -9,7 +9,6 @@ class Node {
         this->next=NULL;
     }
 };
-
  void insert_tail(Node *&head, Node*&tail,int val){
 Node *newNode=new Node(val);       
 if(head==NULL){
