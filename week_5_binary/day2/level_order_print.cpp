@@ -15,7 +15,7 @@ class Node
 void level_order(Node*root){
   queue<Node*>q;
   q.push(root);
-  while(!q.empty()){
+  while(!q.empty()){ 
     Node* f= q.front();
     q.pop();
     cout<<f->val<<" ";
