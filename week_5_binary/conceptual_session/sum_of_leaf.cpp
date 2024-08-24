@@ -53,22 +53,24 @@ Node* input_tree() {
     return root;
 }
 
-void sum_leaf(Node *root,int ans){
+
+ int ans=0;
+
+void sum_leaf(Node *root,int){
     if(root==NULL) return;
     if(root->left==NULL && root->right==NULL){
        ans+=root->val;
        return;
     }
-  sum_leaf(root->left,ans);
-   sum_leaf(root->right,ans);
-    return;  
+  sum_leaf(root->left);
+   sum_leaf(root->right);
 
 }
 
 int main() {
     Node *root = input_tree();
-    int ans=0;
-   sum_leaf(root,ans);
+   
+   sum_leaf(root);
    cout<<ans<<endl;
     return 0;
 }
