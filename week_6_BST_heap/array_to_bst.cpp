@@ -13,8 +13,9 @@ public:
         this->right = NULL;
     }
 };
-
+ 
 Node * convert(int a[],int n,int l,int r){
+    if(l>r) return NULL;
     int mid=(l+r)/2;
     Node* root=new Node(a[mid]);
     Node *leftRoot=convert(a,n,l,mid-1);

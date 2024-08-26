@@ -7,6 +7,14 @@ int main (){
     cin>>x;
     v.push_back(x);
     int cur_idx=v.size()-1;
-    cout<<cur_idx<<endl;
+   while(cur_idx!=0){
+    int parent=(cur_idx-1)/2;
+     if(v[parent]<v[cur_idx]){
+        swap(v[parent],v[cur_idx]);
+    }else{
+        break;
+    }
+        cur_idx=parent;
+   }
     return 0;
 }
