@@ -1,2 +1,0 @@
-
-    cout<<q.front()<<endl;

@@ -24,7 +24,7 @@ void push(int val){
         head=newNode;
         tail=newNode;
         return;
-    }
+    } 
    tail->next=newNode;
    newNode->prev=tail;
    tail=tail->next;
@@ -51,8 +51,7 @@ int size(){
     return sz;
 }
 bool empty (){
-    if (sz==0)return true;
-    else return false;
+   return sz==0;
 }
 
 };
