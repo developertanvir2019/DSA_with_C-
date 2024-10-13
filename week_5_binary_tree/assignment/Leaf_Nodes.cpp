@@ -67,9 +67,9 @@ int main()
 {
     Node *root = input_tree();
     sum_without_leaf(root);
-   sort(v.begin(), v.end(), greater<int>());
-   for(int val:v){
-    cout<<val<<" ";
-   }
+    sort(v.begin(), v.end(), greater<int>());
+    for(int val:v){
+        cout<<val<<" ";
+    }
     return 0;
 }

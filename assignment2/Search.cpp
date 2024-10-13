@@ -39,20 +39,20 @@ int t;
 cin>>t;
 while(t--){
     Node *head=NULL;
-Node *tail=NULL;
-int val;
-while(true){
-    cin>>val;
-    if(val==-1){
-        break;
-    }
+    Node *tail=NULL;
+    int val;
+    while(true){
+        cin>>val;
+        if(val==-1){
+            break;
+        }
     insert_tail(head,tail,val);
    
-}
- int x;
+    }
+    int x;
     cin>>x;
-int index= print_index(head,x);
-cout<<index<<endl;
+    int index= print_index(head,x);
+    cout<<index<<endl;
     
 }
     return 0;

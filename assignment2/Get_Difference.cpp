@@ -10,32 +10,32 @@ class Node {
     }
 };
  void insert_tail(Node *&head, Node*&tail,int val){
-Node *newNode=new Node(val);       
-if(head==NULL){
-    head=newNode;
+    Node *newNode=new Node(val);       
+    if(head==NULL){
+        head=newNode;
+        tail=newNode;
+        return;
+    }
+    tail->next=newNode;
     tail=newNode;
-    return;
-}
-tail->next=newNode;
-tail=newNode;
  };
 
 void print_difference(Node*head){
-Node *temp=head;
-int min = INT_MAX;
-int max = INT_MIN;
-while(temp!=NULL){
-if(min>temp->val){
-    min=temp->val;
-}
-if(max<temp->val){
-    max=temp->val;
-}
-temp=temp->next;
-}
+    Node *temp=head;
+    int min = INT_MAX;
+    int max = INT_MIN;
+    while(temp!=NULL){
+        if(min>temp->val){
+            min=temp->val;
+        }
+        if(max<temp->val){
+            max=temp->val;
+        }
+        temp=temp->next;
+    }
 
-int diff=max-min;
-cout<<diff<<endl;
+    int diff=max-min;
+    cout<<diff<<endl;
 };
 
 int main (){
@@ -49,7 +49,6 @@ while(true){
     }
     insert_tail(head,tail,val);
 }
-print_difference(head);
-    
-    return 0;
+print_difference(head); 
+ return 0;
 }

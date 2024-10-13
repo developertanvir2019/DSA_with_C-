@@ -56,16 +56,17 @@ int main (){
     myStack st;
     myQueue q;
     for(int i=0;i<n;i++){
-    int x;
-cin>>x;
-st.push(x);
+        int x;
+        cin>>x;
+        st.push(x);
     }
     for(int i=0;i<m;i++){
-    int x;
-cin>>x;
-q.push(x);
+        int x;
+        cin>>x;
+        q.push(x);
     }
     bool flag=true;
+    
 if(n!=m){
   flag=false;
 }else{
